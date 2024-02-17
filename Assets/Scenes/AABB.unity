@@ -133,8 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 183667619}
   - component: {fileID: 183667618}
-  - component: {fileID: 183667620}
   - component: {fileID: 183667621}
+  - component: {fileID: 183667620}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -218,12 +218,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 183667617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: beb1b79c4d6c76a43922364c4526c1fd, type: 3}
+  m_Script: {fileID: 11500000, guid: 32991c163ec0a754b9f39ab81689a4ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originPoint: {x: 0, y: 1.15}
-  Length: 1
-  Width: 1
+  MainCharacter: {fileID: 0}
 --- !u!114 &183667621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,10 +231,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 183667617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d54f7ec02fce74408962561317d3756, type: 3}
+  m_Script: {fileID: 11500000, guid: beb1b79c4d6c76a43922364c4526c1fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originPoint: {x: 0, y: 0}
+  originPoint: {x: 0, y: 1.15}
+  Length: 1
+  Width: 1
 --- !u!1 &393215860
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32991c163ec0a754b9f39ab81689a4ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCharacter: {fileID: 183667620}
+  MainCharacter: {fileID: 0}
 --- !u!4 &393215862
 Transform:
   m_ObjectHideFlags: 0
@@ -385,7 +385,6 @@ GameObject:
   - component: {fileID: 538897322}
   - component: {fileID: 538897321}
   - component: {fileID: 538897323}
-  - component: {fileID: 538897324}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -475,19 +474,6 @@ MonoBehaviour:
   originPoint: {x: 0, y: 0}
   Length: 0.5
   Width: 4
---- !u!114 &538897324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538897320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d54f7ec02fce74408962561317d3756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  originPoint: {x: 0, y: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
