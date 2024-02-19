@@ -252,6 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallSpeed: 5
   gravity: 9.81
+  lerpSpeed: 0.1
 --- !u!1 &393215860
 GameObject:
   m_ObjectHideFlags: 0
