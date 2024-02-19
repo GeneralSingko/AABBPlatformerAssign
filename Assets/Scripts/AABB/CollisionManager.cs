@@ -10,13 +10,18 @@ public class CollisionManager : MonoBehaviour
     }
     private void Update()
     {
+        DetectCollision();
+    }
+
+    private void DetectCollision()
+    {
         var Colliders = FindObjectsOfType<Shape>();
 
         foreach (var c in Colliders)
         {
-            
+
             if (MainCharacter == c) continue;
-            if( CheckCollision(MainCharacter, c))
+            if (CheckCollision(MainCharacter, c))
             {
                 Debug.LogError("Collision Detected");
             }
