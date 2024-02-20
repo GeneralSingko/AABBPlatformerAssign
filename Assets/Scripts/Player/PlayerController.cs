@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
 
     public float jumpForce = 5f;
 
+    CollisionManager cM;
+
     void Update()
     {
         ApplyGravity();
