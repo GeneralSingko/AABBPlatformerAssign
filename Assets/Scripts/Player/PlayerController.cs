@@ -9,9 +9,26 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 velocity = Vector3.zero;
 
+    public float jumpForce = 5f;
+
     void Update()
     {
         ApplyGravity();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // Move the object upward
+            Jump();
+        }
+    }
+
+    void Jump()
+    {
+        Vector3 currentPosition = transform.position;
+
+        Vector3 newPosition = new Vector3(currentPosition.x, currentPosition.y + jumpForce, currentPosition.z);
+
+        transform.position = newPosition;
     }
 
     void ApplyGravity()
