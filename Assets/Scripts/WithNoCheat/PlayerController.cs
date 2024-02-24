@@ -11,14 +11,24 @@ public class PlayerController : MonoBehaviour
 
     public float jumpForce = 5f;
 
+    public bool gravityEnabled = true;
+
     void Update()
     {
-        ApplyGravity();
+        if (gravityEnabled)
+        {
+            ApplyGravity();
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // Move the object upward
             Jump();
+        }
+        else
+        {
+            // If gravity is disabled, re-enable it
+            gravityEnabled = true;
         }
     }
 
